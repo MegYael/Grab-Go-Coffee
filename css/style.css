@@ -1,0 +1,350 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url("../font/HVD_Peace.ttf") format("ttf");
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, "sans-serif";
+    color: #52340D;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.nav ul {
+    margin: 0;
+}
+.nav li {
+    display: inline;
+}
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3 )
+}
+.main-nav li {
+    padding: 0 5%;
+}
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3 )
+}
+.main-header {
+    background-color: rgba(0,0,0, .6);
+    background-image: url("../images/background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.shop-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'serif';
+    font-weight: normal;
+    color: white;
+}
+.Grab-Go-large {
+    font-size: 8em;
+}
+.content-section {
+    margin: 1em;
+}
+.details{
+	text-align: left;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: Arial, Helvetica, 'sans-serif';
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.about-coffee-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.main-footer {
+    background-color: #024140;
+    color: white;
+    padding: .25em 0;
+}
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li {
+    padding: 0 .5em;
+}
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+.menu-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.menu-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+.menu-price {
+    color: #1B160E;
+    font-weight: bold;
+    width: 11%;
+}
+.menu-name {
+    width: 24%;
+}
+.menu-size {
+    width: 20%;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+.shop-item {
+    margin: 30px;
+}
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #1B160E;
+    margin-bottom: 15px;
+}
+.shop-item-image {
+    height: 250px;
+}
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-item-price {
+    flex-grow: 1;
+    color: #1B160E;
+}
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #1B160E;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row {
+    display: flex;
+}
+.cart-item {
+    width: 45%;
+}
+.cart-price {
+    width: 28%;
+    font-size: 1.2em;
+    color: #1B160E;
+}
+.cart-quantity {
+    width: 35%;
+}
+.cart-item-title {
+    color: #1B160E;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger {
+    color: white;
+    background-color: #F43437;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-danger:hover {
+    background-color: #F43437;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #2D9CDB;
+    background-color: #eee;
+    color: #1B160E;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price {
+    color: #1B160E;
+    font-size: 1.1em
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+.coupon-name {
+    text-align: center;
+}
+.content-section {
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 768px) {
+.form-container {
+    padding: 5%;
+    background: #ffffff;
+    border: 9px solid #f2f2f2;
+    max-width: 520px;
+    margin: auto;
+}
+}
+h1, p {
+    text-align: center;
+}
+input, textarea {
+    width: 100%;
+}
+.button-primary {
+    width: 100%;
+}
+textarea {
+    height: 200px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grab Go Coffee | Home</title>
+<meta name="Description" content="This is the description">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="main-header">
+  <nav class="nav main-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="store.html">STORE</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+  </nav>
+  <h1 class="shop-name shop-name-large"> <img src="images/grab go coffee logo.png" width="500" height="230" alt=""/> </h1>
+</header>
+<section class="content-section container">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/slid1.jpg" style="width:100%">
+    <div class="text">Chill Vibe</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/slid2.jpg" style="width:100%">
+    <div class="text">Amazing Coffee</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/slid3.jpg" style="width:100%">
+    <div class="text">Chocolate Cookies</div>
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<h2 class="coupon-name">
+  <p>レジにて、クーポンをご提示ください。</p>
+  <img src="images/coupon.png" alt="coupon" width="500" height="230" /> </h2>
+
+  <h3>We are waiting for you !</h3>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12963.62124442454!2d139.68092895!3d35.67933345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ccee2dbecf1%3A0xb27709ce8a00c144!2z5Y2X5paw5a6_6aeF!5e0!3m2!1sja!2sjp!4v1594219737442!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</section>
+<footer class="main-footer">
+  <div class="container main-footer-container">
+    <h3 class="shop-name">Grab Go Coffee</h3>
+    <ul class="nav footer-nav">
+      <li> <a href="https://youtube.com" target="_blank"><img src="images/youtube_PNG19.png" alt="youtube" width="50" height="50"></a></li>
+      <li> <a href="https://twitter.com/login?lang=ja" target="_blank"> <img src="images/twitter_PNG29.png" alt="twitter" width="50" height="50"></a></li>
+      <li> <a href="https://www.instagram.com/?hl=ja" target="_blank"> <img src="images/instagram_PNG11.png" alt="instagram" width="50" height="50"></a></li>
+      <li> <a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook_logos_PNG19748.png" alt="facebook" width="50" height="50"></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
